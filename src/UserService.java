@@ -3,8 +3,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UserService {
-        BufferedWriter bufferedWriter;
-        BufferedReader bufferedReader;
+    BufferedWriter bufferedWriter;
+    BufferedReader bufferedReader;
 
     {
         try {
@@ -64,7 +64,7 @@ public class UserService {
             bufferedWriter = new BufferedWriter(new FileWriter("user.txt"));
             bufferedWriter.write("");
             bufferedWriter = new BufferedWriter(new FileWriter("user.txt", true));
-            for (User user:users) {
+            for (User user : users) {
                 add(user);
             }
 
@@ -73,6 +73,8 @@ public class UserService {
         }
 
     }
+
+
 
     public void exit() {
 
